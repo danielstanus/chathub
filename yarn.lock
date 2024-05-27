@@ -2,7 +2,7 @@
 # Manual changes might be lost - proceed with caution!
 
 __metadata:
-  version: 8
+  version: 6
   cacheKey: 10c0
 
 "@aashutoshrathi/word-wrap@npm:^1.2.3":
@@ -1489,39 +1489,63 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sentry-internal/feedback@npm:7.90.0":
-  version: 7.90.0
-  resolution: "@sentry-internal/feedback@npm:7.90.0"
+"@sentry-internal/feedback@npm:7.116.0":
+  version: 7.116.0
+  resolution: "@sentry-internal/feedback@npm:7.116.0"
   dependencies:
-    "@sentry/core": "npm:7.90.0"
-    "@sentry/types": "npm:7.90.0"
-    "@sentry/utils": "npm:7.90.0"
-  checksum: 7de192316507dc6d82d1ec3ffe3208dc8423b83f93d432796b8337270241e05d35cc606de57b0c9e66a2b4f4cfdc0790a61b9b187040a5412da43d7ef278cf2e
+    "@sentry/core": 7.116.0
+    "@sentry/types": 7.116.0
+    "@sentry/utils": 7.116.0
+  checksum: 8/e22bebb3a00883c47ff7e7e9ce26aca765f6861bbb788485ecce6273cc2516c39179d2fd6791e1ad64b71601cf4e88661d68bf4e4f8887fbf1c717b6ab46b744
   languageName: node
   linkType: hard
 
-"@sentry-internal/tracing@npm:7.90.0":
-  version: 7.90.0
-  resolution: "@sentry-internal/tracing@npm:7.90.0"
+"@sentry-internal/replay-canvas@npm:7.116.0":
+  version: 7.116.0
+  resolution: "@sentry-internal/replay-canvas@npm:7.116.0"
   dependencies:
-    "@sentry/core": "npm:7.90.0"
-    "@sentry/types": "npm:7.90.0"
-    "@sentry/utils": "npm:7.90.0"
-  checksum: ab686bfd9ad22797b305c9077f5b932e2d7c4e2ef94805ba5ba0cdb42d9893a7c4a2a14acec511b8688019bb6d113de5afc1d82cf71579ae0313514609025cb8
+    "@sentry/core": 7.116.0
+    "@sentry/replay": 7.116.0
+    "@sentry/types": 7.116.0
+    "@sentry/utils": 7.116.0
+  checksum: 8/e5a78bb591b16682810d17d2bfea5d9684ddc9a6bd5dec0dc71c929c8c79f0a8f1f92c92468f590daef7b67c993c0ae84157aecf4683e60e3ef5b0fdeb8da515
   languageName: node
   linkType: hard
 
-"@sentry/browser@npm:7.90.0":
-  version: 7.90.0
-  resolution: "@sentry/browser@npm:7.90.0"
+"@sentry-internal/tracing@npm:7.116.0":
+  version: 7.116.0
+  resolution: "@sentry-internal/tracing@npm:7.116.0"
   dependencies:
-    "@sentry-internal/feedback": "npm:7.90.0"
-    "@sentry-internal/tracing": "npm:7.90.0"
-    "@sentry/core": "npm:7.90.0"
-    "@sentry/replay": "npm:7.90.0"
-    "@sentry/types": "npm:7.90.0"
-    "@sentry/utils": "npm:7.90.0"
-  checksum: d887af33e54dec97ada7ca3c3a0ca37e3125489e63c35d7cb2d89f79c0a900cbd68481037819e5cf2d8a58a6449634a7489ee0f223c853838ff6ced0fb576ac6
+    "@sentry/core": 7.116.0
+    "@sentry/types": 7.116.0
+    "@sentry/utils": 7.116.0
+  checksum: 8/494e639fb1ea4a7565a96da27da03e8d26ffe6304b32686e4f325bf7323ca0465a48d6936faa325022b11a035882992b7ef4b87efba21fb5e12beb69e3de959a
+  languageName: node
+  linkType: hard
+
+"@sentry/browser@npm:7.116.0":
+  version: 7.116.0
+  resolution: "@sentry/browser@npm:7.116.0"
+  dependencies:
+    "@sentry-internal/feedback": 7.116.0
+    "@sentry-internal/replay-canvas": 7.116.0
+    "@sentry-internal/tracing": 7.116.0
+    "@sentry/core": 7.116.0
+    "@sentry/integrations": 7.116.0
+    "@sentry/replay": 7.116.0
+    "@sentry/types": 7.116.0
+    "@sentry/utils": 7.116.0
+  checksum: 8/7e41c6bf22913da6930807d04c0c5cdb0ffa782bdf861b8e76d336d8a866a91af271b8201806479776d6582f6212e648a80d59b779df3560e8b934534d7b19c4
+  languageName: node
+  linkType: hard
+
+"@sentry/core@npm:7.116.0":
+  version: 7.116.0
+  resolution: "@sentry/core@npm:7.116.0"
+  dependencies:
+    "@sentry/types": 7.116.0
+    "@sentry/utils": 7.116.0
+  checksum: 8/b3000b31e144c056af64805e4f0aba6e145374593d157db7f6cdf2e97fb43d538161fc5a8cadc4a74f665a29c6ace0772924d7d204ef28b84317c1540b814b20
   languageName: node
   linkType: hard
 
@@ -1532,6 +1556,18 @@ __metadata:
     "@sentry/types": "npm:7.90.0"
     "@sentry/utils": "npm:7.90.0"
   checksum: 57b8c81ac953ecf88ab78b9b981f34f7168c3d7241eb6099d3d66768ae3eb1a93cdf2bac2824447246fd53f367fb9f1553afc01503b9ac58b3f64ef307c50a08
+  languageName: node
+  linkType: hard
+
+"@sentry/integrations@npm:7.116.0":
+  version: 7.116.0
+  resolution: "@sentry/integrations@npm:7.116.0"
+  dependencies:
+    "@sentry/core": 7.116.0
+    "@sentry/types": 7.116.0
+    "@sentry/utils": 7.116.0
+    localforage: ^1.8.1
+  checksum: 8/6868594a78dfd689ab4a9f9c7f765ec7869c7f3395a619d3fba02d8dcb3da46ee04f26f847f59fcbad20ff01d035eb60e1f133a4be207590399e6fd74202b051
   languageName: node
   linkType: hard
 
@@ -1547,29 +1583,37 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sentry/react@npm:^7.90.0":
-  version: 7.90.0
-  resolution: "@sentry/react@npm:7.90.0"
+"@sentry/react@npm:^7.113.0":
+  version: 7.116.0
+  resolution: "@sentry/react@npm:7.116.0"
   dependencies:
-    "@sentry/browser": "npm:7.90.0"
-    "@sentry/types": "npm:7.90.0"
-    "@sentry/utils": "npm:7.90.0"
-    hoist-non-react-statics: "npm:^3.3.2"
+    "@sentry/browser": 7.116.0
+    "@sentry/core": 7.116.0
+    "@sentry/types": 7.116.0
+    "@sentry/utils": 7.116.0
+    hoist-non-react-statics: ^3.3.2
   peerDependencies:
     react: 15.x || 16.x || 17.x || 18.x
-  checksum: 4e6e2b54fbb23e41e24a92154ca8f284d7c52fc0cf83f0b648c6798e0049bdf6a76d96585f7808cce76fec44e7696e40ddc444bcfcce83b5ce19424edd7b97e3
+  checksum: 8/9873282ee5dbeb255c22f49a8da9e5e2404a69fbcf79a37a83df4163ebd1ec861719a77f80c010dcd26e7bf6c0cad96dfa47aa4d458d01b77f27701e2f027dae
   languageName: node
   linkType: hard
 
-"@sentry/replay@npm:7.90.0":
-  version: 7.90.0
-  resolution: "@sentry/replay@npm:7.90.0"
+"@sentry/replay@npm:7.116.0":
+  version: 7.116.0
+  resolution: "@sentry/replay@npm:7.116.0"
   dependencies:
-    "@sentry-internal/tracing": "npm:7.90.0"
-    "@sentry/core": "npm:7.90.0"
-    "@sentry/types": "npm:7.90.0"
-    "@sentry/utils": "npm:7.90.0"
-  checksum: 439bc7ee409b568806a163759924a54df28fc921ce5fce9749b088f7b6d962e6175e0b95c08220452970aadecb687cf0d93648811bd66fe97c5aa769028b3f35
+    "@sentry-internal/tracing": 7.116.0
+    "@sentry/core": 7.116.0
+    "@sentry/types": 7.116.0
+    "@sentry/utils": 7.116.0
+  checksum: 8/b38c74b7deca96a399ef003602ca65ab182ce42c05838c7b611de282f80ef71e8ea81e26d6be076a1866d56d8bc0940aaae405ef5d131a9fbcbca0237898bdb5
+  languageName: node
+  linkType: hard
+
+"@sentry/types@npm:7.116.0":
+  version: 7.116.0
+  resolution: "@sentry/types@npm:7.116.0"
+  checksum: 8/d2ed11ce814201531c3c426f52c25dd32160eda434426ad10963f694f670218d2c40fecc4741acb1c921b826c8c99ef2e60716aff78e74f85f8a091623a0705d
   languageName: node
   linkType: hard
 
@@ -1577,6 +1621,15 @@ __metadata:
   version: 7.90.0
   resolution: "@sentry/types@npm:7.90.0"
   checksum: 6a3ea0dba33eb832845033cd345764689fc5a74f9b6a3f65ebed687250b4e177113eac8ecfc7b2f1299acddf77efa60470d0ff032780a6a5d63e3e771b2390e4
+  languageName: node
+  linkType: hard
+
+"@sentry/utils@npm:7.116.0":
+  version: 7.116.0
+  resolution: "@sentry/utils@npm:7.116.0"
+  dependencies:
+    "@sentry/types": 7.116.0
+  checksum: 8/f8d2f7fd61409fd52376665f6e87fe7b74706c4a9eb6f05b4d85c2c2fa3dc4cb1c31a4cadddc248a3798a6f01906b16ff8317356a0ab4767cb13e38b0f3f90f0
   languageName: node
   linkType: hard
 
@@ -2526,105 +2579,105 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "chathub-extension@workspace:."
   dependencies:
-    "@crxjs/vite-plugin": "npm:2.0.0-beta.21"
-    "@epic-web/cachified": "npm:^4.0.0"
-    "@floating-ui/react": "npm:^0.26.4"
-    "@google/generative-ai": "npm:^0.1.3"
-    "@headlessui/react": "npm:^1.7.17"
-    "@headlessui/tailwindcss": "npm:^0.2.0"
-    "@heroicons/react": "npm:^2.1.1"
-    "@radix-ui/react-tooltip": "npm:^1.0.7"
-    "@sentry/integrations": "npm:^7.90.0"
-    "@sentry/react": "npm:^7.90.0"
-    "@tanstack/react-router": "npm:^0.0.1-beta.83"
-    "@types/cookie": "npm:^0.6.0"
-    "@types/humanize-duration": "npm:^3.27.3"
-    "@types/lodash-es": "npm:^4.17.12"
-    "@types/md5": "npm:^2.3.5"
-    "@types/react": "npm:18.2.18"
-    "@types/react-color": "npm:^3.0.10"
-    "@types/react-copy-to-clipboard": "npm:^5.0.7"
-    "@types/react-dom": "npm:^18.2.18"
-    "@types/react-scroll-to-bottom": "npm:^4.2.4"
-    "@types/turndown": "npm:^5.0.4"
-    "@types/uuid": "npm:^9.0.7"
-    "@types/webextension-polyfill": "npm:^0.10.7"
-    "@typescript-eslint/eslint-plugin": "npm:^6.15.0"
-    "@typescript-eslint/parser": "npm:^6.15.0"
-    "@vitejs/plugin-react": "npm:^4.2.1"
-    async-cache-dedupe: "npm:^2.0.0"
-    autoprefixer: "npm:^10.4.16"
-    browser-fs-access: "npm:^0.35.0"
-    browser-image-compression: "npm:^2.0.2"
-    chrome-types: "npm:^0.1.246"
-    clsx: "npm:^2.0.0"
-    compare-versions: "npm:^6.1.0"
-    cookie: "npm:^0.6.0"
-    dayjs: "npm:^1.11.10"
-    eslint: "npm:^8.56.0"
-    eslint-config-prettier: "npm:^9.1.0"
-    eslint-plugin-react: "npm:^7.33.2"
-    eslint-plugin-react-hooks: "npm:^4.6.0"
-    eventsource-parser: "npm:^1.1.1"
-    framer-motion: "npm:^10.16.16"
-    fuse.js: "npm:^7.0.0"
-    github-markdown-css: "npm:^5.5.0"
-    gpt3-tokenizer: "npm:^1.1.5"
-    highlight.js: "npm:^11.9.0"
-    humanize-duration: "npm:^3.31.0"
-    i18next: "npm:^23.7.11"
-    i18next-browser-languagedetector: "npm:^7.2.0"
-    immer: "npm:^10.0.3"
-    inter-ui: "npm:^3.19.3"
-    jotai: "npm:^2.6.0"
-    jotai-immer: "npm:^0.2.0"
-    js-base64: "npm:^3.7.5"
-    lodash-es: "npm:^4.17.21"
-    md5: "npm:^2.3.0"
-    nanoid: "npm:^5.0.4"
-    ofetch: "npm:^1.3.3"
-    plausible-tracker: "npm:^0.3.8"
-    postcss: "npm:^8.4.32"
-    postcss-import: "npm:^15.1.0"
-    postcss-nesting: "npm:^12.0.2"
-    prettier: "npm:^3.1.1"
-    process: "npm:^0.11.10"
-    react: "npm:^18.2.0"
-    react-color: "npm:^2.19.3"
-    react-confetti-explosion: "npm:^2.1.2"
-    react-copy-to-clipboard: "npm:^5.1.0"
-    react-dom: "npm:^18.2.0"
-    react-hot-toast: "npm:^2.4.1"
-    react-i18next: "npm:^13.5.0"
-    react-icons: "npm:^4.12.0"
-    react-markdown: "npm:^8.0.7"
-    react-node-to-string: "npm:^0.1.2"
-    react-scroll-to-bottom: "npm:^4.2.0"
-    react-spinners: "npm:^0.13.8"
-    react-textarea-autosize: "npm:^8.5.3"
-    react-viewport-list: "npm:^7.1.2"
-    rehype-highlight: "npm:^6.0.0"
-    rehype-stringify: "npm:^9.0.4"
-    remark-breaks: "npm:^3.0.3"
-    remark-gfm: "npm:^3.0.1"
-    remark-math: "npm:^5.1.1"
-    remark-parse: "npm:^10.0.2"
-    remark-rehype: "npm:^10.1.0"
-    remark-supersub: "npm:^1.0.0"
-    sass: "npm:^1.69.5"
-    slashes: "npm:^3.0.12"
-    swr: "npm:^2.2.4"
-    tailwind-merge: "npm:^2.1.0"
-    tailwind-scrollbar: "npm:^3.0.5"
-    tailwindcss: "npm:^3.4.0"
-    turndown: "npm:^7.1.2"
-    typescript: "npm:^5.3.3"
-    unified: "npm:^10.1.2"
-    uuid: "npm:^9.0.1"
-    vite: "npm:4.5.1"
-    vite-tsconfig-paths: "npm:^4.2.2"
-    webextension-polyfill: "npm:^0.10.0"
-    websocket-as-promised: "npm:^2.0.1"
+    "@crxjs/vite-plugin": 2.0.0-beta.21
+    "@epic-web/cachified": ^4.0.0
+    "@floating-ui/react": ^0.26.4
+    "@google/generative-ai": ^0.1.3
+    "@headlessui/react": ^1.7.17
+    "@headlessui/tailwindcss": ^0.2.0
+    "@heroicons/react": ^2.1.1
+    "@radix-ui/react-tooltip": ^1.0.7
+    "@sentry/integrations": ^7.90.0
+    "@sentry/react": ^7.113.0
+    "@tanstack/react-router": ^0.0.1-beta.83
+    "@types/cookie": ^0.6.0
+    "@types/humanize-duration": ^3.27.3
+    "@types/lodash-es": ^4.17.12
+    "@types/md5": ^2.3.5
+    "@types/react": 18.2.18
+    "@types/react-color": ^3.0.10
+    "@types/react-copy-to-clipboard": ^5.0.7
+    "@types/react-dom": ^18.2.18
+    "@types/react-scroll-to-bottom": ^4.2.4
+    "@types/turndown": ^5.0.4
+    "@types/uuid": ^9.0.7
+    "@types/webextension-polyfill": ^0.10.7
+    "@typescript-eslint/eslint-plugin": ^6.15.0
+    "@typescript-eslint/parser": ^6.15.0
+    "@vitejs/plugin-react": ^4.2.1
+    async-cache-dedupe: ^2.0.0
+    autoprefixer: ^10.4.16
+    browser-fs-access: ^0.35.0
+    browser-image-compression: ^2.0.2
+    chrome-types: ^0.1.246
+    clsx: ^2.0.0
+    compare-versions: ^6.1.0
+    cookie: ^0.6.0
+    dayjs: ^1.11.10
+    eslint: ^8.56.0
+    eslint-config-prettier: ^9.1.0
+    eslint-plugin-react: ^7.33.2
+    eslint-plugin-react-hooks: ^4.6.0
+    eventsource-parser: ^1.1.1
+    framer-motion: ^10.16.16
+    fuse.js: ^7.0.0
+    github-markdown-css: ^5.5.0
+    gpt3-tokenizer: ^1.1.5
+    highlight.js: ^11.9.0
+    humanize-duration: ^3.31.0
+    i18next: ^23.7.11
+    i18next-browser-languagedetector: ^7.2.0
+    immer: ^10.0.3
+    inter-ui: ^3.19.3
+    jotai: ^2.6.0
+    jotai-immer: ^0.2.0
+    js-base64: ^3.7.5
+    lodash-es: ^4.17.21
+    md5: ^2.3.0
+    nanoid: ^5.0.4
+    ofetch: ^1.3.3
+    plausible-tracker: ^0.3.8
+    postcss: ^8.4.32
+    postcss-import: ^15.1.0
+    postcss-nesting: ^12.0.2
+    prettier: ^3.1.1
+    process: ^0.11.10
+    react: ^18.2.0
+    react-color: ^2.19.3
+    react-confetti-explosion: ^2.1.2
+    react-copy-to-clipboard: ^5.1.0
+    react-dom: ^18.2.0
+    react-hot-toast: ^2.4.1
+    react-i18next: ^13.5.0
+    react-icons: ^4.12.0
+    react-markdown: ^8.0.7
+    react-node-to-string: ^0.1.2
+    react-scroll-to-bottom: ^4.2.0
+    react-spinners: ^0.13.8
+    react-textarea-autosize: ^8.5.3
+    react-viewport-list: ^7.1.2
+    rehype-highlight: ^6.0.0
+    rehype-stringify: ^9.0.4
+    remark-breaks: ^3.0.3
+    remark-gfm: ^3.0.1
+    remark-math: ^5.1.1
+    remark-parse: ^10.0.2
+    remark-rehype: ^10.1.0
+    remark-supersub: ^1.0.0
+    sass: ^1.69.5
+    slashes: ^3.0.12
+    swr: ^2.2.4
+    tailwind-merge: ^2.1.0
+    tailwind-scrollbar: ^3.0.5
+    tailwindcss: ^3.4.0
+    turndown: ^7.1.2
+    typescript: ^5.3.3
+    unified: ^10.1.2
+    uuid: ^9.0.1
+    vite: 4.5.1
+    vite-tsconfig-paths: ^4.2.2
+    webextension-polyfill: ^0.10.0
+    websocket-as-promised: ^2.0.1
   languageName: unknown
   linkType: soft
 
@@ -3859,9 +3912,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fsevents@patch:fsevents@npm%3A~2.3.2#optional!builtin<compat/fsevents>":
+"fsevents@patch:fsevents@npm%3A~2.3.2#~builtin<compat/fsevents>":
   version: 2.3.2
-  resolution: "fsevents@patch:fsevents@npm%3A2.3.2#optional!builtin<compat/fsevents>::version=2.3.2&hash=df0bf1"
+  resolution: "fsevents@patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=df0bf1"
   dependencies:
     node-gyp: "npm:latest"
   conditions: os=darwin
@@ -7195,42 +7248,42 @@ __metadata:
   languageName: node
   linkType: hard
 
-"resolve@patch:resolve@npm%3A^1.1.7#optional!builtin<compat/resolve>, resolve@patch:resolve@npm%3A^1.19.0#optional!builtin<compat/resolve>":
+"resolve@patch:resolve@npm%3A^1.1.7#~builtin<compat/resolve>, resolve@patch:resolve@npm%3A^1.19.0#~builtin<compat/resolve>":
   version: 1.22.1
-  resolution: "resolve@patch:resolve@npm%3A1.22.1#optional!builtin<compat/resolve>::version=1.22.1&hash=c3c19d"
+  resolution: "resolve@patch:resolve@npm%3A1.22.1#~builtin<compat/resolve>::version=1.22.1&hash=c3c19d"
   dependencies:
     is-core-module: "npm:^2.9.0"
     path-parse: "npm:^1.0.7"
     supports-preserve-symlinks-flag: "npm:^1.0.0"
   bin:
     resolve: bin/resolve
-  checksum: 0d8ccceba5537769c42aa75e4aa75ae854aac866a11d7e9ffdb1663f0158ee646a0d48fc2818ed5e7fb364d64220a1fb9092a160e11e00cbdd5fbab39a13092c
+  checksum: 8/5656f4d0bedcf8eb52685c1abdf8fbe73a1603bb1160a24d716e27a57f6cecbe2432ff9c89c2bd57542c3a7b9d14b1882b73bfe2e9d7849c9a4c0b8b39f02b8b
   languageName: node
   linkType: hard
 
-"resolve@patch:resolve@npm%3A^1.22.2#optional!builtin<compat/resolve>":
+"resolve@patch:resolve@npm%3A^1.22.2#~builtin<compat/resolve>":
   version: 1.22.2
-  resolution: "resolve@patch:resolve@npm%3A1.22.2#optional!builtin<compat/resolve>::version=1.22.2&hash=c3c19d"
+  resolution: "resolve@patch:resolve@npm%3A1.22.2#~builtin<compat/resolve>::version=1.22.2&hash=c3c19d"
   dependencies:
     is-core-module: "npm:^2.11.0"
     path-parse: "npm:^1.0.7"
     supports-preserve-symlinks-flag: "npm:^1.0.0"
   bin:
     resolve: bin/resolve
-  checksum: dcf068c4391941734efda06b6f778c013fd349cd4340f126de17c265a7b006c67de7e80e7aa06ecd29f3922e49f5561622b9faf98531f16aa9a896d22148c661
+  checksum: 8/66cc788f13b8398de18eb4abb3aed90435c84bb8935953feafcf7231ba4cd191b2c10b4a87b1e9681afc34fb138c705f91f7330ff90bfa36f457e5584076a2b8
   languageName: node
   linkType: hard
 
-"resolve@patch:resolve@npm%3A^2.0.0-next.4#optional!builtin<compat/resolve>":
+"resolve@patch:resolve@npm%3A^2.0.0-next.4#~builtin<compat/resolve>":
   version: 2.0.0-next.4
-  resolution: "resolve@patch:resolve@npm%3A2.0.0-next.4#optional!builtin<compat/resolve>::version=2.0.0-next.4&hash=c3c19d"
+  resolution: "resolve@patch:resolve@npm%3A2.0.0-next.4#~builtin<compat/resolve>::version=2.0.0-next.4&hash=c3c19d"
   dependencies:
     is-core-module: "npm:^2.9.0"
     path-parse: "npm:^1.0.7"
     supports-preserve-symlinks-flag: "npm:^1.0.0"
   bin:
     resolve: bin/resolve
-  checksum: ed2bb51d616b9cd30fe85cf49f7a2240094d9fa01a221d361918462be81f683d1855b7f192391d2ab5325245b42464ca59690db5bd5dad0a326fc0de5974dd10
+  checksum: 8/4bf9f4f8a458607af90518ff73c67a4bc1a38b5a23fef2bb0ccbd45e8be89820a1639b637b0ba377eb2be9eedfb1739a84cde24fe4cd670c8207d8fea922b011
   languageName: node
   linkType: hard
 
@@ -8058,13 +8111,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A^5.3.3#optional!builtin<compat/typescript>":
+"typescript@patch:typescript@^5.3.3#~builtin<compat/typescript>":
   version: 5.3.3
-  resolution: "typescript@patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>::version=5.3.3&hash=29ae49"
+  resolution: "typescript@patch:typescript@npm%3A5.3.3#~builtin<compat/typescript>::version=5.3.3&hash=d73830"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: e22df47df9b2b2f2617b8bf511a29aea3d177f9f7a0756818230a76b01cbd7da988bf55f9463aaa1a4c1ff90b80f8dc5676460d4e9dfc010572cbba59b822b0c
+  checksum: 8/f61375590b3162599f0f0d5b8737877ac0a7bc52761dbb585d67e7b8753a3a4c42d9a554c4cc929f591ffcf3a2b0602f65ae3ce74714fd5652623a816862b610
   languageName: node
   linkType: hard
 
