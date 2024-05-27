@@ -103,7 +103,7 @@
     "remark-supersub": "^1.0.0",
     "slashes": "^3.0.12",
     "swr": "^2.2.4",
-    "tailwind-merge": "^2.1.0",
+    "tailwind-merge": "^2.3.0",
     "turndown": "^7.1.2",
     "unified": "^10.1.2",
     "uuid": "^9.0.1",
